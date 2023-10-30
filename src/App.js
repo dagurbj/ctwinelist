@@ -101,7 +101,7 @@ const App = () => {
       localStorage.setItem('CTPassword', newPassword);
     }
 
-    const API_URL = `https://www.cellartracker.com/xlquery.asp?User=${handle}&Password=${password}&Format=xml&Table=List`;
+    const API_URL = `https://cellartracker-proxyservice-jp9vrqw3b-dagurbj.vercel.app/api/proxy?username=${handle}&password=${password}`;
     const fetchData = async () => {
       try {
         const response = await fetch(API_URL);
